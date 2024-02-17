@@ -32,24 +32,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       <meta name="apple-mobile-web-app-capable" content="yes">
       <link rel="stylesheet" href="w3.css">
       <link rel="stylesheet" href="w3-colors-flat.css">
-	   <script>
-		   var allergy_count = 0;
-		   var cold_count = 0;
-		   
-		   function allergyAdd(){allergy_count++; 
-					}
-		   function coldAdd(){cold_count++;
-				     }
-
-		   function calculateResults() {
-			   var total = allergy_count + cold_count;
-			   var coldPercent = (cold_count / total) * 100:
-			   var allergyPercent = (allergy_count / total) * 100:
-			   var resultText = document.getElementById("results");
-			   resultText.innerHTML = "Probability it is allergies = " + allergyPercent.toFixed(2) + "%<br>" +
-                                    "Probability it is a cold = " + coldPercent.toFixed(2) + "%"; 
-		   }
-	   </script>
 	   <style>	
 		   .body {
 			   margin: 0em;
@@ -170,14 +152,23 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
                 calculateResults();
             });
         }
-	function calculateResults() {
-        var total = allergy_count + cold_count;
-        var allergyPercent = (allergy_count / total) * 100;
-        var coldPercent = (cold_count / total) * 100;
-        var resultText = document.getElementById("resultsText"); // Changed to resultsText
-        resultText.innerHTML = "Probability it is allergies = " + allergyPercent.toFixed(2) + "%<br>" +
-                                "Probability it is a cold = " + coldPercent.toFixed(2) + "%";
-    }
+	<script>
+		   var allergy_count = 0;
+		   var cold_count = 0;
+		   
+		   function allergyAdd(){allergy_count++; 
+					}
+		   function coldAdd(){cold_count++;
+				     }
+
+		   function calculateResults() {
+			   var total = allergy_count + cold_count;
+			   var coldPercent = (cold_count / total) * 100:
+			   var allergyPercent = (allergy_count / total) * 100:
+			   var resultText = document.getElementById("results");
+			   resultText.innerHTML = "Probability it is allergies = " + allergyPercent.toFixed(2) + "%<br>" +
+                                    "Probability it is a cold = " + coldPercent.toFixed(2) + "%"; 
+		   }
     </script>
 
 	
