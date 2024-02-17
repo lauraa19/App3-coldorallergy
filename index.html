@@ -147,12 +147,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
     <!-- Script to calculate and display results when navigating to the results page -->
     <script>
-        window.onload = function() {
-            document.getElementById('results').addEventListener('click', function() {
-                calculateResults();
-            });
-        }
-	<script>
+
 		   var allergy_count = 0;
 		   var cold_count = 0;
 		   
@@ -169,6 +164,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 			   resultText.innerHTML = "Probability it is allergies = " + allergyPercent.toFixed(2) + "%<br>" +
                                     "Probability it is a cold = " + coldPercent.toFixed(2) + "%"; 
 		   }
+	    window.onload = function() {
+            document.getElementById('results').addEventListener('click', function() {
+                calculateResults();
+            });
+        }
+	    
     </script>
 
 	
