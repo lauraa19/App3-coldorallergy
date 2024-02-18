@@ -126,14 +126,32 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	<div id="content" class="w3-container">
 		<div id="content" class="w3-container">
 	<p>Are your symptoms seasonal or chronic?</p>    
-	<a href="#results"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-         	<a href="#results"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+	<a href="#ffive"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+         	<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
  </div><!-- /content -->
 
 	</p>	
 	</div>
 	
 </div>	
+
+<div class="page" id="five">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 5</h1>
+	</div>
+	
+    	<div id="content" class="w3-container">
+		<div id="content" class="w3-container">
+	<p>Do you have a cough?</p>    
+	<a href="#results"  onclick="allergyAdd();" class="w3-btn w3-black"> No</a>
+         	<a href="#results"  onclick="coldAdd();" class="w3-btn w3-black">Yes</a>
+ </div><!-- /content -->
+
+	</p>	
+	</div>
+	
+</div>
+	
 	
 <div class="page" id="results">
         <div class="w3-container w3-flat-carrot">
@@ -141,7 +159,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         </div>
         <div class="w3-container">
             <p id="resultsText"></p>
-		<p>Click anywhere on screen to see the results.</p
+	<p>Click anywhere on screen to see the results.</p>
             <!-- Results will be displayed here -->
         </div>
     </div>
