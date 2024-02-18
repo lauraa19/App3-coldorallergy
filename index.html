@@ -135,44 +135,47 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 </div>	
 	
- <div class="page" id="results">
+<div class="page" id="results">
         <div class="w3-container w3-flat-carrot">
             <h1>Results</h1>
         </div>
         <div class="w3-container">
             <p id="resultsText"></p>
             <!-- Results will be displayed here -->
-
+        </div>
+    </div>
+    
     <!-- Script to calculate and display results when navigating to the results page -->
     <script>
 
-		   var allergy_count = 0;
-		   var cold_count = 0;
-		   
-		   function allergyAdd(){allergy_count + 1; 
-					}
-		   function coldAdd(){cold_count + 1;
-				     }
+        var allergy_count = 0;
+        var cold_count = 0;
+        
+        function allergyAdd() {
+            allergy_count++; 
+        }
+        
+        function coldAdd() {
+            cold_count++;
+        }
 
-		   function calculateResults() {
-			   var total = allergy_count + cold_count;
-			   var coldPercent = (cold_count / var total) * 100;
-			   var allergyPercent = (allergy_count / var total) * 100;
-			   var resultText = document.getElementById("results");
-			   resultText.innerHTML = "Probability it is allergies = " + allergyPercent.toFixed(2) + "<br>" +
-                                    "Probability it is a cold = " + coldPercent.toFixed(2); 
-		   }
-	    window.onload = function() {
+        function calculateResults() {
+            var total = allergy_count + cold_count;
+            var coldPercent = (cold_count / total) * 100;
+            var allergyPercent = (allergy_count / total) * 100;
+            var resultText = document.getElementById("resultsText");
+            resultText.innerHTML = "Probability it is allergies = " + allergyPercent.toFixed(2) + "%<br>" +
+                                    "Probability it is a cold = " + coldPercent.toFixed(2) + "%"; 
+        }
+
+        window.onload = function() {
             document.getElementById("results").addEventListener("click", function() {
                 calculateResults();
             });
-        }
-	    
+        };
     </script>
-</div>
-    </div>
-	
-<footer class="w3-bottom w3-container w3-flat-carrot">
+    
+    <footer class="w3-bottom w3-container w3-flat-carrot">
         <p>DIY!</p>
     </footer>
 </body>
