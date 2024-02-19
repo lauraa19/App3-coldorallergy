@@ -27,12 +27,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 -->
 	
    <head> 
-      <title>Is it a cold or allergies?</title>  
+      <title>Is it a cold or allergies?</title>  <!-- Title of the tab. -->
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="apple-mobile-web-app-capable" content="yes">
+	 <!-- mets codes for infromation about the p[age not meant to be displayed. -->
       <link rel="stylesheet" href="w3.css">
+	    <!-- link codes for the webpage size to be reasonable on a smartphone-->
       <link rel="stylesheet" href="w3-colors-flat.css">
-	   <style>	
+	    <!-- link codes for the shortcut on the homepage. -->
+	   <style> 
 		   .body {
 			   margin: 0em;
 		   }
@@ -51,56 +54,68 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 			   z-index: 1;
 		   }
 	   </style>
+	   <!-- Style codes for the look of the webpage. -->
 </head> 
-
+	<!-- head codes for the header section of the code/webpage. -->
+	
+<!-- body codes for the rest of the webpage, the content that will be shown in the webpage. -->
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>Cold or Allergies?</h1>
+	<!-- h1 meand header 1, which displays the name of the page. -->
 </div>
-	
+	<!-- div divides the page into sections. Used t=for clarity and organizaiton in the webpage. -->
 <div id="content" class="w3-container">
 	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
-	
+	<!-- First button of the code to take you to the questions. -->
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
-
+<!-- Text that whos up in the first page/ also what shows up as soon as the wbesite loads. -->
 <div class="page" id="one">
+	<!-- First page, hence the id = one because it is the first question. -->
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1>
+		<!-- Header will display the title Question 1 at the top of the page. -->
 	</div>
-	
+	<!-- First division of the page. -->
     	<div id="content" class="w3-container">
 		<div id="content" class="w3-container">
-	<p>Are your eyes watery or itchy?</p>    
+	<p>Are your eyes watery or itchy?</p>  
+			<!-- First quesiton text that will show up on the webpage. -->
 	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
          	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+			<!-- Code for buttons yes or no with the onclick meaning where the click will count towards, wither if the person has allergies or a cold for this quesiton by answering yes or no. -->
  </div><!-- /content -->
 
 	</p>  
 		
     	</div>
 </div>
-
+<!-- End of first page after the person clicks the buttons Yes or No. -->
+	
 <div class="page" id="two">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
 	</div>
-	
+	<!-- First division of second page that will display Question 2 because of h1(header) code. -->
 	<div id="content" class="w3-container">
 		<div id="content" class="w3-container">
 	<p>Do you have a fever?</p>
+			<!-- Second question that  will be displayed on the webpage. -->
 	<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
-         	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>		
+         	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
+		<!-- Code for buttons yes or no with the onclick meaning where the click will count towards, wither if the person has allergies or a cold for this quesiton by answering yes or no. -->	
 </div><!-- /content -->
 
 	</p>  
 		
 	</div>
 </div>	
-
+<!-- End of second page after the person clicks the buttons Yes or No. -->
+	
 <div class="page" id="three">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>
@@ -117,7 +132,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 </div>	
-
+<!-- End of third page after the person clicks the buttons Yes or No. -->
+	
 <div class="page" id="four">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
@@ -134,7 +150,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 </div>	
-
+<!-- End of fourth page after the person clicks the buttons Yes or No. -->
+	
 <div class="page" id="five">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 5</h1>
@@ -151,7 +168,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 </div>	
-
+<!-- End of fifth page after the person clicks the buttons Yes or No. -->
+	
 <div class="page" id="six">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 6</h1>
@@ -168,19 +186,19 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 </div>	
-	
+	<!-- End of sixth page after the person clicks the buttons Yes or No. -->
 	
 <div class="page" id="results">
         <div class="w3-container w3-flat-carrot">
             <h1>Results</h1>
         </div>
         <div id="content" class="w3-container">
-	<button class="w3-butyton w3-black"  onclick="calculateResults()">Click here to View Results</button>
+	<button class="w3-butyton w3-black"  onclick="calculateResults()">Click Here to View Results</button>
 	<p id="resultsText"></p>
             <!-- Results will be displayed here -->
         </div>
 </div>
-    
+   <!-- End of results page after the person clicks the button Click Here to View Results. --> 
     <!-- Script to calculate and display results when navigating to the results page -->
     <script>
 
@@ -209,7 +227,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
     </script>
-    
+    <!-- Script allows for the buttons to have somehwere to store their clicks/counts and be able to display the results of the person accordingly in percentage values. -->
     <footer class="w3-bottom w3-container w3-flat-carrot">
         <p>DIY!</p>
     </footer>
