@@ -74,6 +74,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 <!-- Text that whos up in the first page/ also what shows up as soon as the wbesite loads. -->
+	
 <div class="page" id="one">
 	<!-- First page, hence the id = one because it is the first question. -->
 	<div id="header" class="w3-container w3-flat-carrot">
@@ -120,12 +121,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>
 	</div>
-	
+	<!-- First division of third page that will display Question 3 because of h1(header) code. -->
     	<div id="content" class="w3-container">
 		<div id="content" class="w3-container">
-	<p>Do you have a sore throat?</p>    
+	<p>Do you have a sore throat?</p>   
+			<!-- Third question that  will be displayed on the webpage. -->
 	<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
          	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
+			<!-- Code for buttons yes or no with the onclick meaning where the click will count towards, wither if the person has allergies or a cold for this quesiton by answering yes or no. -->
  </div><!-- /content -->
 
 	</p>	
@@ -138,12 +141,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
 	</div>
-	
+	<!-- First division of fourth page that will display Question 4 because of h1(header) code. -->
     	<div id="content" class="w3-container">
 		<div id="content" class="w3-container">
 	<p>Are your symptoms seasonal or chronic?</p>    
+			<!-- Fourth question that  will be displayed on the webpage. -->
 	<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
          	<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+			<!-- Code for buttons yes or no with the onclick meaning where the click will count towards, wither if the person has allergies or a cold for this quesiton by answering yes or no. -->
  </div><!-- /content -->
 
 	</p>	
@@ -156,12 +161,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 5</h1>
 	</div>
-	
+	<!-- First division of fifth page that will display Question 5 because of h1(header) code. -->
     	<div id="content" class="w3-container">
 		<div id="content" class="w3-container">
 	<p>Do you have a cough?</p>    
+			<!-- Fifth question that  will be displayed on the webpage. -->
 	<a href="#six"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
          	<a href="#six"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
+			<!-- Code for buttons yes or no with the onclick meaning where the click will count towards, wither if the person has allergies or a cold for this quesiton by answering yes or no. -->
  </div><!-- /content -->
 
 	</p>	
@@ -174,12 +181,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 6</h1>
 	</div>
-	
+	<!-- First division of sixth page that will display Question 6 because of h1(header) code. -->
     	<div id="content" class="w3-container">
 		<div id="content" class="w3-container">
-	<p>Have your symptoms lasted for more than 14 days?</p>    
+	<p>Have your symptoms lasted for more than 14 days?</p>  
+			<!-- Sixth question that  will be displayed on the webpage. -->
 	<a href="#results"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
          	<a href="#results"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+			<!-- Code for buttons yes or no with the onclick meaning where the click will count towards, wither if the person has allergies or a cold for this quesiton by answering yes or no. -->
  </div><!-- /content -->
 
 	</p>	
@@ -192,10 +201,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         <div class="w3-container w3-flat-carrot">
             <h1>Results</h1>
         </div>
+	<!-- First division of results page that will display "Results" because of h1(header) code. -->
         <div id="content" class="w3-container">
 	<button class="w3-butyton w3-black"  onclick="calculateResults()">Click Here to View Results</button>
 	<p id="resultsText"></p>
-            <!-- Results will be displayed here -->
+            <!-- Results will be displayed here after the button is pressed. -->
         </div>
 </div>
    <!-- End of results page after the person clicks the button Click Here to View Results. --> 
