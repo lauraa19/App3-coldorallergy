@@ -204,9 +204,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
                                     "Probability it is a cold = " + coldPercent.toFixed(2) + "%"; 
         }
 
-        window.onload = function() {
-            document.getElementById("results").addEventListener("click", function() {
-                calculateResults();
+       <div id="content" class="w3-container">
+		<button class="w3-button w3-black" onclick="calculateResults ()">Click here to view Results</button>
             });
         };
     </script>
